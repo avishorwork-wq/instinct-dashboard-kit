@@ -1,4 +1,4 @@
-# Private dashboard starter
+# Single-owner dashboard starter
 
 A plain HTML/CSS/JavaScript dashboard with a Cloudflare Worker API, SQLite-backed Durable Object state, Google sign-in and live WebSocket updates. No build step or runtime libraries. Designed for one owner and their automation client.
 
