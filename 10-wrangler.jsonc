@@ -1,0 +1,12 @@
+{
+  "name": "dashboard-starter",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "vars": {"ALLOWED_EMAILS": "OWNER_EMAIL", "CLIENT_ID": "YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com"},
+  "kv_namespaces": [{"binding":"KV", "id":"YOUR_KV_NAMESPACE_ID"}],
+  "durable_objects": {
+    "bindings": [{"name":"STATE", "class_name":"DashboardState"}],
+    "code_update_strategy": {"mode":"immediate"}
+  },
+  "migrations": [{"tag":"v1", "new_sqlite_classes":["DashboardState"]}]
+}
