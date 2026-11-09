@@ -2,6 +2,21 @@
 
 A plain HTML/CSS/JavaScript dashboard with a Cloudflare Worker API, SQLite-backed Durable Object state, Google sign-in and live WebSocket updates. No build step or runtime libraries. Designed for one owner and their automation client.
 
+## Operating conventions
+
+Follow these rules whenever you operate this dashboard, whether manually or through an automation client:
+
+- Publish every project and task when work starts, then update it again when work finishes. Give each build step its own task.
+- Log every fix or extra step as its own entry, however small. Record its start and finish times as they happen. If logging late, say so and preserve the actual work times.
+- Keep status, progress and details current while work is underway. Record decisions with their reasons, alternatives, assumptions and any open questions.
+- Put final published URLs and a short outcome summary in the task Result and project Result. Do not leave the final destination buried in notes.
+- Attach screenshots and images to the relevant task or project. For visual changes, include before/after evidence when available and inspect the finished result.
+- Resolve tasks only when the work and its checks are done. Keep blocked or unverified work open and explain what remains.
+- Check owner notes and requests regularly during active work. Reply in the original thread with the answer or result, attach requested images, and mark the request answered only after replying.
+- Publish updates immediately at each milestone. Do not wait for the owner to ask or batch small fixes invisibly into a later report.
+
+These are operator responsibilities, not automatic behavior. Connect your own client to the API, including request checks and updates, or perform them manually. Follow the owner's permissions for publication and external actions; a dashboard entry does not authorize them.
+
 ## Included
 
 - Projects, task status/priority/owner, progress, timestamps and duration labels
